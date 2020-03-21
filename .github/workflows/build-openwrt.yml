@@ -25,7 +25,7 @@ env:
   REPO_URL: https://github.com/1002yuan/lede
   REPO_BRANCH: master
   CONFIG_FILE: .config
-  DIY_SH: diy.sh
+  #DIY_SH: diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
