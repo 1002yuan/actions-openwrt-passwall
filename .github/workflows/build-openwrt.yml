@@ -25,7 +25,7 @@ env:
   REPO_URL: https://github.com/1002yuan/lede
   REPO_BRANCH: master
   CONFIG_FILE: .config
-  #DIY_SH: diy.sh
+  DIY_SH: diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
@@ -70,14 +70,14 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: Load custom configuration
-      run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x $DIY_SH
-        cd openwrt
-        ../$DIY_SH
-        make defconfig
+#    - name: Load custom configuration
+#     run: |
+#        [ -e files ] && mv files openwrt/files
+#        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+#        chmod +x $DIY_SH
+#        cd openwrt
+#        ../$DIY_SH
+#        make defconfig
 
     - name: SSH connection to Actions
       uses: P3TERX/debugger-action@master
