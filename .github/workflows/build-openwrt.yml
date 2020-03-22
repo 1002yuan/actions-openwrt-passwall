@@ -62,7 +62,7 @@ jobs:
         sudo -E apt-get -qq clean
 
     - name: Clone source code
-      run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+      run: https://github.com/coolsnowwolf/lede openwrt
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
@@ -87,7 +87,7 @@ jobs:
       id: package
       run: |
         cd openwrt
-        make download -j8
+        make download -j16
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
