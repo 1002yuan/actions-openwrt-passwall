@@ -5,7 +5,7 @@ on:
     types: [published]
   push:
     branches:
-      - dev-lean-lede
+      - master
 #    paths:
 #      - '.config'
 #  schedule:
