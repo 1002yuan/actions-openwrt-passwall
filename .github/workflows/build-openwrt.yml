@@ -14,10 +14,10 @@ on:
 #    types: [started]
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_URL: https://github.com/1002yuan/openwrt
   REPO_BRANCH: dev-19.07
-  CONFIG_FILE: .config
-  #DIY_SH: diy.sh
+  CONFIG_FILE: d255config
+  DIY_SH: diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
