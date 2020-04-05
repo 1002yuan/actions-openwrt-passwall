@@ -65,7 +65,7 @@ jobs:
       run: |
               cd openwrt
               ./scripts/feeds install -a
-               cp d255config .config
+              
               
 
     - name: SSH connection to Actions
