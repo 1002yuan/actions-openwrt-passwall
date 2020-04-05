@@ -14,12 +14,12 @@ on:
 #    types: [started]
 
 env:
-  REPO_URL: https://github.com/1002yuan/openwrt
-  REPO_BRANCH: dev-19.07
-  CONFIG_FILE: d255config
+  REPO_URL: https://github.com/xiaoqingfengATGH/HomeLede
+  REPO_BRANCH: master
+  CONFIG_FILE: .config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
-  SSH_ACTIONS: false
+  SSH_ACTIONS: ture
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
