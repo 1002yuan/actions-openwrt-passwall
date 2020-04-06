@@ -26,8 +26,9 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: .config
   DIY_SH: diy.sh
-  SSH_ACTIONS: false
-  UPLOAD_BIN_DIR:  true
+  # false
+  SSH_ACTIONS: true
+  UPLOAD_BIN_DIR:  false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER:  true
   TZ: Asia/Shanghai
